@@ -1,0 +1,10 @@
+# .NET
+bin/
+obj/
+*.db
+
+# Angular/Ionic
+node_modules/
+.angular/
+dist/
+www/
