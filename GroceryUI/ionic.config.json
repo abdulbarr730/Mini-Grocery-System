@@ -1,0 +1,7 @@
+{
+  "name": "GroceryUI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
