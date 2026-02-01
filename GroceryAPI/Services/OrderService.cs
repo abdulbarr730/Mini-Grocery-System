@@ -32,7 +32,7 @@ public class OrderService : IOrderService
             // 2. Fetch the product using the Repository
             var product = await _repo.GetByIdAsync(productId);
             
-            // 3. Brutally honest validation: No stock = No order [cite: 2025-12-13]
+            // No stock = No order
             if (product == null) return (false, "Product not found.");
             if (product.Stock < quantity) return (false, $"Insufficient stock. Only {product.Stock} left.");
 
